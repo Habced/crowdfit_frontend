@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { UserService } from './user.service';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [UserService]
 })
-export class AppComponent {
-  title = 'crowdfit-frontend';
+export class AppComponent implements OnInit{
+
+  constructor(private userService: UserService ) {
+  }
+
+  ngOnInit() {}
+
+
 }
