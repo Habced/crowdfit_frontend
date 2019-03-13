@@ -20,6 +20,9 @@ import { BulletinBoardManagementComponent } from './bulletin-board-management/bu
 import { DanjiManagementComponent } from './danji-management/danji-management.component';
 import { CommunityComponent } from './community/community.component';
 import { CultureCourseComponent } from './culture-course/culture-course.component';
+import { WageManagementComponent } from './wage-management/wage-management.component';
+import { SalesManagementComponent } from './sales-management/sales-management.component';
+import { CostNoticeManagementComponent } from './cost-notice-management/cost-notice-management.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { CultureCourseComponent } from './culture-course/culture-course.componen
     DanjiManagementComponent,
     CommunityComponent,
     CultureCourseComponent,
+    WageManagementComponent,
+    SalesManagementComponent,
+    CostNoticeManagementComponent,
   ],
   imports: [
     AppRoutingModule,

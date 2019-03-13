@@ -15,6 +15,9 @@ import { BulletinBoardManagementComponent } from './bulletin-board-management/bu
 import { DanjiManagementComponent } from './danji-management/danji-management.component';
 import { CultureCourseComponent } from './culture-course/culture-course.component';
 import { CommunityComponent } from './community/community.component';
+import { WageManagementComponent } from './wage-management/wage-management.component';
+import { SalesManagementComponent } from './sales-management/sales-management.component';
+import { CostNoticeManagementComponent } from './cost-notice-management/cost-notice-management.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -28,7 +31,12 @@ const routes: Routes = [
     ]},
   { path: 'resident', component: ResidentManagementComponent},
   { path: 'staff', component: StaffManagementComponent},
-  { path: 'accounting', component: AccountingManagementComponent},
+  { path: 'accounting', component: AccountingManagementComponent, children: [
+    { path: '', redirectTo: 'wage', pathMatch: 'full' },
+    { path: 'wage', component: WageManagementComponent},
+    { path: 'sales', component: SalesManagementComponent},
+    { path: 'cost-notice', component: CostNoticeManagementComponent},
+  ]},
   { path: 'store', component: StoreManagementComponent},
   { path: 'locker', component: LockerManagementComponent},
   { path: 'class', component: ClassManagementComponent},
