@@ -23,6 +23,8 @@ import { CultureCourseComponent } from './culture-course/culture-course.componen
 import { WageManagementComponent } from './wage-management/wage-management.component';
 import { SalesManagementComponent } from './sales-management/sales-management.component';
 import { CostNoticeManagementComponent } from './cost-notice-management/cost-notice-management.component';
+import { GxManagementComponent } from './gx-management/gx-management.component';
+import { LessonManagementComponent } from './lesson-management/lesson-management.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { CostNoticeManagementComponent } from './cost-notice-management/cost-not
     WageManagementComponent,
     SalesManagementComponent,
     CostNoticeManagementComponent,
+    GxManagementComponent,
+    LessonManagementComponent,
   ],
   imports: [
     AppRoutingModule,
