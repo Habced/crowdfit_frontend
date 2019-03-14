@@ -25,6 +25,8 @@ import { SalesManagementComponent } from './sales-management/sales-management.co
 import { CostNoticeManagementComponent } from './cost-notice-management/cost-notice-management.component';
 import { GxManagementComponent } from './gx-management/gx-management.component';
 import { LessonManagementComponent } from './lesson-management/lesson-management.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { LessonManagementComponent } from './lesson-management/lesson-management
     CostNoticeManagementComponent,
     GxManagementComponent,
     LessonManagementComponent,
+    FooterComponent,
+    HeaderComponent,
   ],
   imports: [
     AppRoutingModule,
