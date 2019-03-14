@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { A11yModule } from '@angular/cdk/a11y';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +31,7 @@ import { GxManagementComponent } from './gx-management/gx-management.component';
 import { LessonManagementComponent } from './lesson-management/lesson-management.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -59,6 +64,9 @@ import { HeaderComponent } from './components/header/header.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    MatSidenavModule,
+    A11yModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
