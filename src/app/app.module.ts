@@ -30,6 +30,8 @@ import { ServiceCenterComponent } from './service-center/service-center.componen
 import { StaffManagementComponent } from './staff-management/staff-management.component';
 import { StoreManagementComponent } from './store-management/store-management.component';
 import { WageManagementComponent } from './wage-management/wage-management.component';
+import { GeneralResidentManagementComponent } from './general-resident-management/general-resident-management.component';
+import { CommunityMemberManagementComponent } from './community-member-management/community-member-management.component';
 
 
 @NgModule({
@@ -56,6 +58,8 @@ import { WageManagementComponent } from './wage-management/wage-management.compo
     StaffManagementComponent,
     StoreManagementComponent,
     WageManagementComponent,
+    GeneralResidentManagementComponent,
+    CommunityMemberManagementComponent,
   ],
   imports: [
     A11yModule,
