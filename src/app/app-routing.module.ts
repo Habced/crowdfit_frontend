@@ -19,9 +19,11 @@ import { ServiceCenterComponent } from './service-center/service-center.componen
 import { StaffManagementComponent } from './staff-management/staff-management.component';
 import { StoreManagementComponent } from './store-management/store-management.component';
 import { WageManagementComponent } from './wage-management/wage-management.component';
+import { GeneralResidentManagementComponent } from './general-resident-management/general-resident-management.component';
+import { CommunityMemberManagementComponent } from './community-member-management/community-member-management.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+
   { path: 'menu', component: MenuManagementComponent, children: [
     { path: '', redirectTo: 'bulletinboard', pathMatch: 'full' },
     { path: 'bulletinboard', component: BulletinBoardManagementComponent},
@@ -29,24 +31,38 @@ const routes: Routes = [
     { path: 'community', component: CommunityComponent},
     { path: 'culturecourse', component: CultureCourseComponent},
     ]},
-  { path: 'resident', component: ResidentManagementComponent},
+
+  { path: 'resident', component: ResidentManagementComponent, children: [
+    { path: '', redirectTo: 'general-resident', pathMatch: 'full' },
+    { path: 'general-resident', component: GeneralResidentManagementComponent},
+    { path: 'community-member', component: CommunityMemberManagementComponent},
+    ]},
+
   { path: 'staff', component: StaffManagementComponent},
+
   { path: 'accounting', component: AccountingManagementComponent, children: [
     { path: '', redirectTo: 'wage', pathMatch: 'full' },
     { path: 'wage', component: WageManagementComponent},
     { path: 'sales', component: SalesManagementComponent},
     { path: 'cost-notice', component: CostNoticeManagementComponent},
     ]},
+
   { path: 'store', component: StoreManagementComponent},
+
   { path: 'locker', component: LockerManagementComponent},
+
   { path: 'class', component: ClassManagementComponent, children: [
     { path: '', redirectTo: 'gx', pathMatch: 'full' },
     { path: 'gx', component: GxManagementComponent},
     { path: 'lesson', component: LessonManagementComponent}
     ]},
+
   { path: 'attendence', component: AttendenceManagementComponent},
+
   { path: 'service-center', component: ServiceCenterComponent},
+
   { path: 'settings', component: PermissionSettingsComponent},
+
 ];
 
 @NgModule({
