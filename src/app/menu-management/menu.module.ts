@@ -3,25 +3,25 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
-import { MenuRoutingModule } from './menu-routing.module';
-import { MenuManagementComponent } from './menu-management.component';
 import { BulletinBoardManagementComponent } from '../bulletin-board-management/bulletin-board-management.component';
-import { DanjiManagementComponent } from '../danji-management/danji-management.component';
 import { CommunityComponent } from '../community/community.component';
 import { CultureCourseComponent } from '../culture-course/culture-course.component';
+import { DanjiManagementComponent } from '../danji-management/danji-management.component';
+import { MenuManagementComponent } from './menu-management.component';
+import { MenuRoutingModule } from './menu-routing.module';
 
 @NgModule({
   declarations: [
     BulletinBoardManagementComponent,
-    DanjiManagementComponent,
     CommunityComponent,
-    CultureCourseComponent
+    CultureCourseComponent,
+    DanjiManagementComponent,
   ],
   imports: [
-    MenuRoutingModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    MenuRoutingModule,
   ],
   providers: [],
   bootstrap: [MenuManagementComponent]
